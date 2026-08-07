@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Saed Mohamed Hussein — AI Researcher, Applied AI Engineer, Quantum Machine Learning Researcher, UAV Developer, and Graphic Designer.">
+  <title>Saed Mohamed Hussein | AI Research Portfolio</title>
+  <style>
+    :root {
+      --bg:#07111f; --panel:#0d1b2f; --panel2:#10243e; --text:#eef5ff;
+      --muted:#aebbd0; --accent:#3cc8ff; --accent2:#7f7cff;
+      --line:rgba(255,255,255,.10); --shadow:0 18px 50px rgba(0,0,0,.28);
+      --radius:20px; --max:1180px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+      background:radial-gradient(circle at top right,rgba(60,200,255,.12),transparent 32%),
+      radial-gradient(circle at 10% 10%,rgba(127,124,255,.10),transparent 25%),var(--bg);
+      color:var(--text);line-height:1.65}
+    a{color:inherit;text-decoration:none}
+    .container{width:min(92%,var(--max));margin:0 auto}
+    nav{position:sticky;top:0;z-index:100;backdrop-filter:blur(14px);background:rgba(7,17,31,.78);border-bottom:1px solid var(--line)}
+    .nav-inner{min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+    .brand{font-weight:800;font-size:1.05rem}.brand span{color:var(--accent)}
+    .nav-links{display:flex;gap:18px;color:var(--muted);font-size:.95rem}.nav-links a:hover{color:var(--text)}
+    .hero{min-height:82vh;display:grid;grid-template-columns:1.2fr .8fr;align-items:center;gap:56px;padding:90px 0 70px}
+    .eyebrow{display:inline-flex;padding:7px 12px;border:1px solid rgba(60,200,255,.25);background:rgba(60,200,255,.08);color:#bcecff;border-radius:999px;font-size:.9rem;margin-bottom:18px}
+    h1,h2,h3{margin-top:0;line-height:1.15}
+    h1{font-size:clamp(3rem,7vw,6rem);letter-spacing:-4px;margin-bottom:18px}
+    h1 .accent{background:linear-gradient(90deg,var(--accent),#b7a9ff);-webkit-background-clip:text;background-clip:text;color:transparent}
+    .hero p{max-width:760px;color:var(--muted);font-size:1.1rem;margin-bottom:28px}
+    .actions{display:flex;flex-wrap:wrap;gap:14px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 18px;border-radius:12px;border:1px solid var(--line);font-weight:700;transition:.2s ease}
+    .btn.primary{background:linear-gradient(90deg,var(--accent),var(--accent2));color:#06111f;border:0}.btn:hover{transform:translateY(-2px)}
+    .hero-card{background:linear-gradient(180deg,rgba(16,36,62,.92),rgba(13,27,47,.95));border:1px solid var(--line);border-radius:28px;padding:28px;box-shadow:var(--shadow)}
+    .stat-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:20px}
+    .stat{padding:18px;border-radius:16px;background:rgba(255,255,255,.035);border:1px solid var(--line)}
+    .stat strong{display:block;font-size:1.35rem;color:var(--accent)}
+    section{padding:84px 0}
+    .section-head{display:flex;align-items:end;justify-content:space-between;gap:24px;margin-bottom:34px}
+    .section-head h2{font-size:clamp(2rem,4vw,3rem);letter-spacing:-1.5px;margin-bottom:8px}
+    .section-head p{color:var(--muted);max-width:700px;margin:0}
+    .grid{display:grid;grid-template-columns:repeat(12,1fr);gap:22px}
+    .card{grid-column:span 6;background:linear-gradient(180deg,rgba(13,27,47,.95),rgba(10,21,37,.95));border:1px solid var(--line);border-radius:var(--radius);padding:26px;box-shadow:var(--shadow)}
+    .card.large{grid-column:span 12}.card p,.card li{color:var(--muted)}
+    .tag-row{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+    .tag{font-size:.86rem;padding:7px 10px;border-radius:999px;color:#c8edff;background:rgba(60,200,255,.08);border:1px solid rgba(60,200,255,.18)}
+    .timeline{border-left:1px solid var(--line);padding-left:24px}
+    .timeline-item{position:relative;margin-bottom:32px}.timeline-item::before{content:"";position:absolute;width:12px;height:12px;border-radius:50%;left:-31px;top:7px;background:var(--accent);box-shadow:0 0 0 6px rgba(60,200,255,.08)}
+    .timeline-item .meta{color:var(--accent);font-size:.92rem;font-weight:700;margin-bottom:5px}
+    .skills{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+    .skill-box{padding:20px;border-radius:16px;background:rgba(255,255,255,.035);border:1px solid var(--line)}
+    .skill-box h3{font-size:1rem;margin-bottom:10px}.skill-box p{margin:0;color:var(--muted);font-size:.95rem}
+    .contact{text-align:center;background:linear-gradient(140deg,rgba(60,200,255,.08),rgba(127,124,255,.10));border:1px solid var(--line);border-radius:28px;padding:48px 24px}
+    .contact p{color:var(--muted);max-width:700px;margin:0 auto 22px}
+    footer{border-top:1px solid var(--line);padding:30px 0 40px;color:var(--muted);text-align:center;font-size:.9rem}
+    @media(max-width:900px){.hero{grid-template-columns:1fr;min-height:auto}.hero-card{order:-1}.card{grid-column:span 12}.skills{grid-template-columns:repeat(2,1fr)}.nav-links{display:none}h1{letter-spacing:-2px}}
+    @media(max-width:560px){.skills,.stat-grid{grid-template-columns:1fr}section{padding:64px 0}.hero{padding-top:54px}}
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="container nav-inner">
+      <a class="brand" href="#top">Saed<span>.</span></a>
+      <div class="nav-links">
+        <a href="#about">About</a><a href="#research">Research</a><a href="#projects">Projects</a>
+        <a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <main id="top">
+    <div class="container hero">
+      <div>
+        <div class="eyebrow">AI Research • Quantum ML • State Estimation</div>
+        <h1>Saed Mohamed <span class="accent">Hussein</span></h1>
+        <p>Master’s student in Applied Artificial Intelligence at National Taiwan Ocean University, working at the intersection of machine learning, quantum computing, nonlinear state estimation, large language models, and intelligent autonomous systems.</p>
+        <div class="actions">
+          <a class="btn primary" href="#research">View Research</a>
+          <a class="btn" href="#projects">Explore Projects</a>
+          <a class="btn" href="#contact">Contact Me</a>
+        </div>
+      </div>
+      <aside class="hero-card">
+        <h3>Current Focus</h3>
+        <p>Adaptive Variational Quantum Regression–Aided Extended Kalman Filtering for nonlinear state estimation under non-Gaussian noise and measurement outliers.</p>
+        <div class="stat-grid">
+          <div class="stat"><strong>5+ Years</strong>Multidisciplinary professional experience</div>
+          <div class="stat"><strong>AI + QML</strong>Machine learning and variational quantum models</div>
+          <div class="stat"><strong>UAV</strong>FPV drone development and flight-control systems</div>
+          <div class="stat"><strong>Creative</strong>Branding, motion graphics, and visual storytelling</div>
+        </div>
+      </aside>
+    </div>
+
+    <section id="about">
+      <div class="container">
+        <div class="section-head"><div><h2>About Me</h2><p>I combine research, engineering, and visual communication to build intelligent systems and explain complex technical ideas clearly.</p></div></div>
+        <div class="grid"><div class="card large">
+          <p>I am pursuing a Master’s degree in Applied Artificial Intelligence at National Taiwan Ocean University (NTOU), after completing a Bachelor’s degree in Telecommunication Engineering. My technical interests include machine learning, quantum neural networks, nonlinear filtering, GNSS navigation, LLM applications, and UAV systems.</p>
+          <p>My current research uses Python and Qiskit to develop variational quantum models that assist classical state-estimation algorithms. Alongside research, I have extensive experience in graphic design and video editing, including brand identity, social media campaigns, motion graphics, and marketing communication.</p>
+        </div></div>
+      </div>
+    </section>
+
+    <section id="research">
+      <div class="container">
+        <div class="section-head"><div><h2>Research</h2><p>Graduate research in hybrid quantum-classical estimation and intelligent filtering.</p></div></div>
+        <div class="grid">
+          <article class="card large">
+            <h3>Adaptive Variational Quantum Regression–Aided Extended Kalman Filter</h3>
+            <p>A hybrid quantum-classical framework designed to improve nonlinear state estimation under time-varying, non-Gaussian, and outlier-contaminated measurement conditions.</p>
+            <ul>
+              <li>Extended Kalman Filter as the primary model-based estimator.</li>
+              <li>Variational Quantum Regression for learning adaptive state corrections.</li>
+              <li>Innovation-based feature engineering and residual modeling.</li>
+              <li>Testing with simulated nonlinear systems and real GNSS receiver data.</li>
+              <li>Comparison against classical and learning-based filtering baselines.</li>
+            </ul>
+            <div class="tag-row"><span class="tag">Qiskit</span><span class="tag">Python</span><span class="tag">EKF</span><span class="tag">VQR</span><span class="tag">Quantum ML</span><span class="tag">GNSS</span><span class="tag">Non-Gaussian Noise</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="container">
+        <div class="section-head"><div><h2>Selected Projects</h2><p>Projects spanning artificial intelligence, language models, UAVs, and creative technology.</p></div></div>
+        <div class="grid">
+          <article class="card">
+            <h3>GPT-Based Legal Assistance System</h3>
+            <p>Applied GPT-based systems to support AI-driven legal-information services for Somaliland governmental websites, with an emphasis on easier access to public information.</p>
+            <div class="tag-row"><span class="tag">LLMs</span><span class="tag">Prompt Engineering</span><span class="tag">RAG</span><span class="tag">Public Services</span></div>
+          </article>
+          <article class="card">
+            <h3>LLM & Retrieval-Augmented Generation</h3>
+            <p>Built experimental pipelines using document retrieval, vector embeddings, model APIs, local language models, and AI-agent workflows.</p>
+            <div class="tag-row"><span class="tag">LangChain</span><span class="tag">Embeddings</span><span class="tag">Vector Retrieval</span><span class="tag">AI Agents</span></div>
+          </article>
+          <article class="card">
+            <h3>FPV Drone Development</h3>
+            <p>Configured and troubleshot FPV drone systems including flight controllers, receivers, GPS modules, Betaflight firmware, UART communication, failsafe, and GPS rescue.</p>
+            <div class="tag-row"><span class="tag">Betaflight</span><span class="tag">FPV</span><span class="tag">UART</span><span class="tag">GPS</span></div>
+          </article>
+          <article class="card">
+            <h3>Brand & Visual Communication</h3>
+            <p>Created brand identities, marketing visuals, social media campaigns, motion graphics, presentation systems, and promotional video content.</p>
+            <div class="tag-row"><span class="tag">Photoshop</span><span class="tag">Illustrator</span><span class="tag">Premiere Pro</span><span class="tag">After Effects</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <div class="container">
+        <div class="section-head"><div><h2>Experience & Education</h2><p>A concise timeline of my research, engineering, and creative background.</p></div></div>
+        <div class="timeline">
+          <div class="timeline-item"><div class="meta">Present</div><h3>Graduate AI Researcher — National Taiwan Ocean University</h3><p>Research in variational quantum regression, Extended Kalman filtering, nonlinear state estimation, GNSS data analysis, and hybrid AI systems.</p></div>
+          <div class="timeline-item"><div class="meta">Current Degree</div><h3>Master’s in Applied Artificial Intelligence — NTOU</h3><p>Full-time graduate study in Applied AI, with research focused on quantum machine learning and intelligent state estimation.</p></div>
+          <div class="timeline-item"><div class="meta">5+ Years</div><h3>Graphic Designer & Video Editor</h3><p>Professional work in visual identity, marketing design, social media content, motion graphics, video editing, and visual storytelling.</p></div>
+          <div class="timeline-item"><div class="meta">Engineering Background</div><h3>Bachelor’s in Telecommunication Engineering</h3><p>Foundation in communications, signal processing, electronics, engineering mathematics, programming, and technical systems.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="container">
+        <div class="section-head"><div><h2>Technical Skills</h2><p>Core tools and domains used across my research and project work.</p></div></div>
+        <div class="skills">
+          <div class="skill-box"><h3>AI & Machine Learning</h3><p>Machine learning, neural networks, QNNs, predictive modeling, feature engineering, LLMs, RAG.</p></div>
+          <div class="skill-box"><h3>State Estimation</h3><p>Kalman Filter, EKF, adaptive filtering, Particle Filter, KalmanNet, GNSS processing.</p></div>
+          <div class="skill-box"><h3>Programming</h3><p>Python, MATLAB, NumPy, Pandas, SciPy, PyTorch, Scikit-learn, Git, Linux.</p></div>
+          <div class="skill-box"><h3>Quantum Computing</h3><p>Qiskit, variational quantum circuits, VQR, quantum feature encoding, hybrid optimization.</p></div>
+          <div class="skill-box"><h3>UAV Systems</h3><p>FPV drones, Betaflight, GPS integration, radio receivers, UART, embedded troubleshooting.</p></div>
+          <div class="skill-box"><h3>Data & Visualization</h3><p>Matplotlib, scientific plots, RMSE evaluation, experiment comparison, technical presentation.</p></div>
+          <div class="skill-box"><h3>Design</h3><p>Photoshop, Illustrator, InDesign, Premiere Pro, After Effects, branding, motion graphics.</p></div>
+          <div class="skill-box"><h3>Research</h3><p>Algorithm development, experimentation, mathematical modeling, technical writing, literature review.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <div class="contact">
+          <h2>Let’s Build Something Intelligent</h2>
+          <p>I am interested in AI research, machine learning, quantum computing, autonomous systems, navigation, and research-driven engineering opportunities.</p>
+          <div class="actions" style="justify-content:center">
+            <a class="btn primary" href="mailto:YOUR_EMAIL@example.com">Email Me</a>
+            <a class="btn" href="https://github.com/YOUR_GITHUB_USERNAME" target="_blank" rel="noopener">GitHub</a>
+            <a class="btn" href="https://www.linkedin.com/in/YOUR_LINKEDIN_USERNAME/" target="_blank" rel="noopener">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer><div class="container">© 2026 Saed Mohamed Hussein. Built for GitHub Pages.</div></footer>
+</body>
+</html>
