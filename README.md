@@ -1,7 +1,8 @@
 # 👋  Saed Mohamed Bigile
 
 <p align="center">
-  <img src="assets/profile.jpg" width="180" style="border-radius:50%;" alt="Saed Mohamed Hussein">
+  <img src=<img width="1117" height="508" alt="image" src="https://github.com/user-attachments/assets/92293109-d6e3-4ae1-98d7-82acf1ab43dc" />
+ width="180" style="border-radius:50%;" alt="Saed Mohamed Hussein">
 </p>
 
 <h3 align="center">
