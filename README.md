@@ -436,7 +436,7 @@ AI Research • Quantum Machine Learning • State Estimation • UAV Systems
 https://github.com/SaedMohamedHussein
 
 🔗 **LinkedIn:**
-https://www.linkedin.com/in/Saed Bigile/
+https://www.linkedin.com/in/SaedBigile/
 
 ---
 
