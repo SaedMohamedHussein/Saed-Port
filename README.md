@@ -390,14 +390,6 @@ For two pictures beside each other:
 </p>
 ```
 
----
-
-# 🌐 Portfolio Website
-
-This repository also contains my portfolio website:
-
-```text
-index.html
 ```
 
 It can be deployed using **GitHub Pages**.
@@ -415,14 +407,6 @@ Repository
 → /root
 → Save
 ```
-
-Your portfolio will then be available at something similar to:
-
-```text
-https://YOUR_GITHUB_USERNAME.github.io/YOUR_REPOSITORY_NAME/
-```
-
----
 
 # 📫 Contact
 
