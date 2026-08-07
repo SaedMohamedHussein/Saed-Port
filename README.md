@@ -347,26 +347,6 @@ Departmental recognition received in **2026**.
 
 ---
 
-# 📂 Portfolio Repository Structure
-
-```text
-portfolio/
-│
-├── index.html
-├── README.md
-│
-└── assets/
-    ├── profile.jpg
-    ├── research-system.png
-    ├── research-results.png
-    ├── quantum-circuit.png
-    ├── legal-ai.png
-    ├── drone.jpg
-    └── design-work.jpg
-```
-
----
-
 # 🖼️ How to Add Your Pictures
 
 Create a folder inside your repository called:
@@ -450,13 +430,13 @@ https://YOUR_GITHUB_USERNAME.github.io/YOUR_REPOSITORY_NAME/
 
 AI Research • Quantum Machine Learning • State Estimation • UAV Systems
 
-📧 **Email:** [YOUR_EMAIL@example.com](mailto:YOUR_EMAIL@example.com)
+📧 **Email:** [siciidmaxamed50@gmail.com](mailto:siciidmaxamed50@gmail.com)
 
 💻 **GitHub:**
-https://github.com/YOUR_GITHUB_USERNAME
+https://github.com/SaedMohamedHussein
 
 🔗 **LinkedIn:**
-https://www.linkedin.com/in/YOUR_LINKEDIN_USERNAME/
+https://www.linkedin.com/in/Saed Bigile/
 
 ---
 
