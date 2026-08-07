@@ -1,4 +1,4 @@
-# 👋 Hi, I'm Saed Mohamed Hussein
+# 👋  Saed Mohamed Bigile
 
 <p align="center">
   <img src="assets/profile.jpg" width="180" style="border-radius:50%;" alt="Saed Mohamed Hussein">
@@ -9,7 +9,7 @@ AI Researcher • Applied AI Engineer • Quantum Machine Learning • UAV Devel
 </h3>
 
 <p align="center">
-Master's Student in Applied Artificial Intelligence at  
+Applied Artificial Intelligence at  
 <strong>National Taiwan Ocean University (NTOU)</strong>
 </p>
 
@@ -29,7 +29,7 @@ Master's Student in Applied Artificial Intelligence at
 
 # 🧠 About Me
 
-I am a Master's student in **Applied Artificial Intelligence at National Taiwan Ocean University (NTOU)** with a Bachelor's degree in **Telecommunication Engineering**.
+I am a Master of  **Applied Artificial Intelligence at National Taiwan Ocean University (NTOU)** with a Bachelor's degree in **Telecommunication Engineering**.
 
 My main research interests include:
 
