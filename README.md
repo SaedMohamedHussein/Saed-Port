@@ -345,68 +345,7 @@ National Taiwan Ocean University
 
 Departmental recognition received in **2026**.
 
----
 
-# 🖼️ How to Add Your Pictures
-
-Create a folder inside your repository called:
-
-```text
-assets
-```
-
-Then upload your pictures.
-
-For example:
-
-```text
-assets/profile.jpg
-assets/drone.jpg
-assets/research-results.png
-```
-
-To display an image in your README:
-
-```html
-<p align="center">
-  <img src="assets/profile.jpg" width="300">
-</p>
-```
-
-For a large research image:
-
-```html
-<p align="center">
-  <img src="assets/research-results.png" width="850">
-</p>
-```
-
-For two pictures beside each other:
-
-```html
-<p align="center">
-  <img src="assets/project1.png" width="45%">
-  <img src="assets/project2.png" width="45%">
-</p>
-```
-
-```
-
-It can be deployed using **GitHub Pages**.
-
-### GitHub Pages Setup
-
-Go to:
-
-```text
-Repository
-→ Settings
-→ Pages
-→ Deploy from a branch
-→ main
-→ /root
-→ Save
-```
 
 # 📫 Contact
 
